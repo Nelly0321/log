@@ -9,10 +9,4 @@ find_package(opencv REQUIRED)
 
 
 add_executable(a main.cpp)
-target_link_libraries(a
- PRIVATE
- opencv_core
- opencv_objdetect
- opencv_video
- opencv_videoio
- opencv_highgui)
+target_link_libraries(a PRIVATE opencv_highgui opencv_core)
